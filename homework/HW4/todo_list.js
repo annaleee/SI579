@@ -11,6 +11,8 @@ function submitTask(){
     var time = document.getElementById("duetime_input");
     addTask(descrip.value,dateAndTimeToTimestamp(date,time))
     descrip.value = "";
+    date.value = "";
+    time.value = "";
 }
 function addTask(description, dueTime){
     var ul = document.getElementById("task_list");
